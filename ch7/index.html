@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="style.css">
+	<title>Document</title>
+</head>
+<body>
+	<header class="top-banner">
+		<div class="top-banner-inner">
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, facere.
+				<button id="open">Sign In</button>
+			</p>
+		</div>
+	</header>		
+	<div class="modal" id="modal">
+		<div class="modal-backdrop"></div>
+		<div class="modal-body">
+			<button class="modal-close" id="close">Close</button>
+			<h2>Lorem, ipsum.</h2>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, natus.</p>
+			<form>
+				<p>
+					<label for="email">Email:</label>
+					<input type="text" name="email">
+				</p>
+				<p><button type="submit">Submit</button></p>
+			</form>
+		</div>
+	</div>
+	<div class="container">
+		<nav>
+			<div class="dropdown">
+				<div class="dropdown-label">Menu</div>
+				<div class="dropdown-menu">
+					<ul class="submenu">
+						<li><a href="/">Main</a></li>
+						<li><a href="/coffees">Coffees</a></li>
+						<li><a href="/brewers">Brewers</a></li>
+						<li><a href="/specials">Specials</a></li>
+						<li><a href="/about">About</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<h1>Lorem ipsum dolor sit amet.</h1>
+	</div>
+
+	<script type="text/javascript">
+		var button = document.getElementById('open');
+		var close = document.getElementById('close');
+		var modal = document.getElementById('modal');
+
+		button.addEventListener('click', function(e) {
+			e.preventDefault();
+			modal.style.display = 'block';
+		});
+		close.addEventListener('click', function(e) {
+			e.preventDefault();
+			modal.style.display = 'none';
+		});
+	</script>
+</body>
+</html>
