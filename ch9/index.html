@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<title>Document</title>
+</head>
+
+<body>
+
+	<div class="message">
+		Saved successfuly
+	</div>
+	<div class="message message--error">
+		Wrong password
+	</div>
+
+	<button class="button button--large">More</button>
+	<button class="button button--success">Save</button>
+	<button class="button button--danger button--small">Cancel</button>
+
+	<div class="media">
+		<img class="media__image" src="runner.png" alt="runner">
+		<div class="media_body">
+			<h4>Lorem.</h4>
+			<p>
+				Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod pariatur sit, atque
+				&mdash; nobis similique asperiores?
+			</p>
+		</div>
+	</div>
+
+	<div class="media media--right">
+		<img class="media__image" src="runner.png" alt="runner">
+		<div class="media_body">
+			<h4>Lorem.</h4>
+			<p>
+				Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod pariatur sit,
+				atque
+				&mdash; nobis similique asperiores?
+			</p>
+		</div>
+	</div>
+
+	<div class="dropdown">
+		<button class="dropdown__toggle">Menu</button>
+		<div class="dropdown__drawer">
+			<ul class="menu">
+				<li><a href="/">Main</a></li>
+				<li><a href="/coffess">Coffess</a></li>
+				<li><a href="/brewers">Brewers</a></li>
+				<li><a href="/specials">Specials!</a></li>
+				<li><a href="/about">About</a></li>
+			</ul>
+		</div>
+	</div>
+
+	<script type="text/javascript">
+		(function () {
+			var toggle = document.querySelector('.dropdown__toggle');
+			toggle.addEventListener('click', function (e) {
+				e.preventDefault();
+				var dropdown = e.target.parentNode;
+				dropdown.classList.toggle('is-open');
+			});
+		})();
+	</script>
+</body>
+
+</html>
